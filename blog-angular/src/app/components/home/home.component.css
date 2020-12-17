@@ -1,0 +1,6 @@
+.post-image img {
+    max-width: 200px;
+    margin: auto;
+    overflow: hidden;
+}
+

@@ -1,0 +1,10 @@
+<div class="col-md-12" *ngIf="!post">
+    <div class="center-item mt-5">
+        <div class="preloader"></div>
+    </div>
+</div>
+<div class="col-md-12" *ngIf="post">
+    <h1>{{post.title}}</h1>
+    <p>{{post.category.name}} - <a [routerLink]="['/perfil', post.user.id]">{{ post.user.name + ' ' + post.user.surname }}</a> </p>
+    <p [innerHtml]="post.content" ></p>
+</div>

@@ -1,0 +1,20 @@
+<div *ngIf="!posts">
+    <div class="center-item mt-5">
+      <div class="preloader"></div>
+    </div>
+  </div>
+  
+  <div class="col-md-12">
+    <div id="user-card">
+      <div class="avatar_mask" >
+        <img class="avatar_nav" src="{{url + 'user/avatar/' + identity.image }}">
+      </div>
+      <h1>Perfil de {{user?.name + ' ' + user?.surname}}</h1>
+      <p [innerHTML]="user?.description"></p>
+    </div>
+    <!-- LISTADO DE ENTRADAS-->
+    <post-list [posts]="posts" [identity]="identity" [url]="url"></post-list>
+ 
+  
+  </div>
+  

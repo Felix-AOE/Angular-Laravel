@@ -1,0 +1,27 @@
+Clonar = Copiar
+git clone https://github.com/Felix-AOE/master-fullstack.git nuevo_nombre
+
+Ver cambios, creacion de archivos y eliminacion de archivos 
+git status 
+
+añadir archivo (cambiar de status para poder hacer el commit)
+git add README.md
+
+cambio de estado a commit 
+git commit -m "Commit Git"
+
+
+subir el archivo al repositorio 
+git push origin master
+
+Ver las diferencias de entre el push anterior y lo que esta actualmente en el archivo 
+-= lo que estaba anteriormente 
++ = Esto es lo que esta actualmente 
+
+git diff README.md
+
+Da la informacion de los commit hechos , quien(Nombre, email) ,cuando, nombre de la version, datos de la version  
+git log 
+
+Cuando se borra por accidente o pasa algo, se pueden ver el estatus, lugo ver las diferencias y al final utilizar el siguiente comando para volver a tener el codigo antes del error 
+git checkout Gitcomandos.txt
